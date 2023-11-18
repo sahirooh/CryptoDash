@@ -1,10 +1,10 @@
 import React from 'react'
-import Navigation from './components/Navigation'
+import Dashboard from './pages/Dashboard/Dashboard'
 
 const App = () => {
   return (
     <div>
-      <Navigation />
+      <Dashboard />
     </div>
   )
 }
