@@ -12,7 +12,6 @@ const Header = () => {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      console.log("Clicked outside");
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDropdownOpen(false);
       }

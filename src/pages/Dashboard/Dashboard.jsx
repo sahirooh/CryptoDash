@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from '../../components/Navigation'
 import Header from '../../components/Header'
+import Hero from '../../components/Hero'
 
 const Dashboard = () => {
   return (
@@ -8,6 +9,7 @@ const Dashboard = () => {
         <Navigation />
         <div className='flex-grow'>
             <Header />
+            <Hero />
         </div>
     </div>
   )
