@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Portfolio from "./Components/Portfolio";
 import PriceSection from "./Components/PriceSection";
 import Transactions from "./Components/Transactions";
+import InfoCard from "./Components/InfoCard";
 
 const Dashboard = () => {
   return (
@@ -17,6 +18,7 @@ const Dashboard = () => {
             <PriceSection />
             <Transactions />
           </div>
+          <InfoCard />
         </div>
       </div>
     </div>
