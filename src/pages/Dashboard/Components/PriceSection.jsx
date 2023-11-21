@@ -11,7 +11,7 @@ const PriceSection = () => {
     <div className="w-[468px] h-[310px] bg-white rounded-xl">
       <div className="flex justify-between mx-6 mt-6">
         <div>
-          <h1 className="font-medium text-[14px] text-[#535D66]">
+          <h1 className="font-medium text-sm text-[#535D66]">
             Current Price
           </h1>
           <p className="font-medium gap-2 flex text-2xl">

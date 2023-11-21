@@ -10,7 +10,7 @@ const Portfolio = () => {
           <div className="m-6">
             <h1 className="font-medium flex items-center text-[#535D66] text-[14px]">
               Total Portfolio Value{" "}
-              <span className="bg-[#535D66] text-white ml-1 text-[10px] rounded-full px-[6px]">
+              <span className="bg-[#535D66] text-white flex ml-1 text-[10px] rounded-full px-[6px]">
                 i
               </span>
             </h1>
