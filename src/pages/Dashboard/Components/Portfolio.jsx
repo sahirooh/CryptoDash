@@ -14,7 +14,7 @@ const Portfolio = () => {
                 i
               </span>
             </h1>
-            <p className="font-medium text-2xl">11,11,111</p>
+            <p className="font-medium text-2xl">₹ 112,312.24</p>
           </div>
           <RxDividerVertical className="text-4xl opacity-20" />
           <div className="m-6">
@@ -23,20 +23,20 @@ const Portfolio = () => {
             </h1>
             <div className="flex gap-10">
               <p className="font-medium flex items-center gap-2 text-2xl">
-                4.444{" "}
+                22.3940771{" "}
                 <span className="text-xs text-[#535D66] mt-1 items-center rounded-[100px] px-[6px] py-[1px] bg-[#EEEEF4]">
                   BTC
                 </span>
               </p>
               <p className="font-medium flex items-center gap-2 text-2xl">
-                4.444{" "}
+                ₹ 1,300.00{" "}
                 <span className="text-xs text-[#535D66] mt-1 rounded-[100px] px-[6px] py-[2px] bg-[#EEEEF4]">
                   INR
                 </span>
               </p>
             </div>
           </div>
-          <div className="flex text-white font-medium ml-[160px] gap-2">
+          <div className="flex text-white font-medium ml-[60px] gap-2">
             <button className="bg-purple-600 flex items-center gap-1 px-4 py-2 rounded-lg">
               <MdFileDownload className="" />
               Deposit
