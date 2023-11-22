@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { LuUserCircle } from "react-icons/lu";
 
-const Header = () => {
+const Header = ({title}) => {
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div className="shadow-lg justify-between items-center flex px-[150px] h-16">
-      <h1 className="font-medium text-[28px]">Dashboard</h1>
+      <h1 className="font-medium text-[28px]">{title}</h1>
       <div className="relative" ref={dropdownRef}>
         <LuUserCircle
           onClick={toggleDropdown}
