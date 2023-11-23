@@ -32,7 +32,7 @@ const History = () => {
         tag: "E-Transfer",
       },
       amount: "+₹81,123",
-      status: "pending",
+      status: "Pending",
     },
     {
       id: "HD82NA4H",
@@ -43,7 +43,7 @@ const History = () => {
         tag: "Wire Transfer",
       },
       amount: "-₹55,123",
-      status: "processing",
+      status: "Processing",
     },
     {
       id: "HD82NA5H",
@@ -54,7 +54,7 @@ const History = () => {
         tag: "BTC",
       },
       amount: "12.0554484 BTC",
-      status: "cancelled",
+      status: "Cancelled",
     },
     {
       id: "HD82NA6H",
@@ -65,7 +65,7 @@ const History = () => {
         tag: "BTC",
       },
       amount: "-2.0554484 BTC",
-      status: "completed",
+      status: "Completed",
     },
     {
       id: "HD82NA7H",
@@ -75,7 +75,7 @@ const History = () => {
         name: "BTC Deposit",
       },
       amount: "+15.5000000",
-      status: "pending",
+      status: "Pending",
     },
     {
       id: "HD82NA8H",
@@ -85,9 +85,16 @@ const History = () => {
         name: "BTC Widthdraw",
       },
       amount: "-5.05555544",
-      status: "completed",
+      status: "Completed",
     },
   ];
+
+  const statusColor = {
+    Pending: "bg-gray-400",
+    Completed: "bg-green-500",
+    Cancelled: "bg-red-500",
+    Processing: "bg-yellow-500",
+  };
 
   return (
     <div className="bg-white w-[1050px] rounded-2xl h-[508px]">
@@ -120,20 +127,22 @@ const History = () => {
         ))}
       </div>
 
-      <div className="flex flex-col h-[360px] mx-6 justify-between">
+      <div className=" flex-col font-medium flex text-sm h-[360px] mt-2 justify-between">
         {tableData.map((item) => (
           <div className="flex items-center">
-            <h1>{item.id}</h1>
+            <h1 className="ml-9">{item.id}</h1>
             <div className="flex flex-col ml-[110px]">
               <h1>{item.date}</h1>
-              <h1>{item.time}</h1>
+              <p className="text-gray-400">{item.time}</p>
             </div>
-            <div className="ml-[150px] w-[11%] ">
+            <div className="ml-[160px] w-[11%] ">
               <h1>{item.type.name}</h1>
-              <h1>{item.type.tag}</h1>
+              <p className="text-gray-400">{item.type.tag}</p>
             </div>
-            <h1 className="ml-[100px] w-[14%]">{item.amount}</h1>
-            <h1 className="ml-[80px]">{item.status}</h1>
+            <h1 className="ml-[90px] w-[14%]">{item.amount}</h1>
+            <h1 className={`ml-[80px] rounded-full ${statusColor[item.status]} px-[6px] py-[2px] `}>
+              {item.status}
+            </h1>
           </div>
         ))}
       </div>
