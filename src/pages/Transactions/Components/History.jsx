@@ -22,6 +22,73 @@ const History = () => {
 
   const heading = ["ID", "Date & Time", "Type", "Amount", "Status"];
 
+  const tableData = [
+    {
+      id: "HD82NA2H",
+      date: "2023-06-20",
+      time: "07:00 AM",
+      type: {
+        name: "INR Deposit",
+        tag: "E-Transfer",
+      },
+      amount: "+₹81,123",
+      status: "pending",
+    },
+    {
+      id: "HD82NA4H",
+      date: "2023-06-18",
+      time: "07:00 AM",
+      type: {
+        name: "INR Widthdraw",
+        tag: "Wire Transfer",
+      },
+      amount: "-₹55,123",
+      status: "processing",
+    },
+    {
+      id: "HD82NA5H",
+      date: "2023-06-18",
+      time: "07:00 AM",
+      type: {
+        name: "Buy",
+        tag: "BTC",
+      },
+      amount: "12.0554484 BTC",
+      status: "cancelled",
+    },
+    {
+      id: "HD82NA6H",
+      date: "2023-06-18",
+      time: "07:00 AM",
+      type: {
+        name: "Sell",
+        tag: "BTC",
+      },
+      amount: "-2.0554484 BTC",
+      status: "completed",
+    },
+    {
+      id: "HD82NA7H",
+      date: "2023-06-20",
+      time: "07:00 AM",
+      type: {
+        name: "BTC Deposit",
+      },
+      amount: "+15.5000000",
+      status: "pending",
+    },
+    {
+      id: "HD82NA8H",
+      date: "2023-06-18",
+      time: "07:00 AM",
+      type: {
+        name: "BTC Widthdraw",
+      },
+      amount: "-5.05555544",
+      status: "completed",
+    },
+  ];
+
   return (
     <div className="bg-white w-[1050px] rounded-2xl h-[508px]">
       <div className="flex mt-4 border-b justify-between">
@@ -49,6 +116,24 @@ const History = () => {
         {heading.map((item) => (
           <div className="flex px-4 py-4 font-medium text-sm text-gray-400">
             <h1>{item}</h1>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex flex-col h-[360px] mx-6 justify-between">
+        {tableData.map((item) => (
+          <div className="flex items-center">
+            <h1>{item.id}</h1>
+            <div className="flex flex-col ml-[110px]">
+              <h1>{item.date}</h1>
+              <h1>{item.time}</h1>
+            </div>
+            <div className="ml-[150px] w-[11%] ">
+              <h1>{item.type.name}</h1>
+              <h1>{item.type.tag}</h1>
+            </div>
+            <h1 className="ml-[100px] w-[14%]">{item.amount}</h1>
+            <h1 className="ml-[80px]">{item.status}</h1>
           </div>
         ))}
       </div>
