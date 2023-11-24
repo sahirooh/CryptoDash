@@ -9,7 +9,9 @@ import InfoCard from "./Components/InfoCard";
 const Dashboard = () => {
   return (
     <div className="flex">
-      <Navigation />
+      
+        <Navigation />
+      
       <div className="flex-grow">
         <Header title={"Dashboard"} />
         <div className="bg-[#EEEEF4] flex flex-col gap-6 items-center h-[calc(100vh-64px)]">

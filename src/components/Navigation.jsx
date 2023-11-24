@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div className="flex flex-col w-[220px] shadow-lg justify-between h-[100vh]">
-      <div>
+    <div className=" hidden md:flex flex-col w-[220px] shadow-lg justify-between h-[100vh]">
+      <div className="">
         <Link to={"/"}>
           <img className="max-w-[160px]" src="/mylogo.png" alt="logo" />
           <div className="flex cursor-pointer p-2 font-medium text-[14px] items-center hover:bg-gray-200 ml-4 gap-2 rounded-lg ">

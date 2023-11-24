@@ -12,7 +12,7 @@ const Support = () => {
       <div className="flex-grow">
         <Header title={"Support"} />
         <div className=" bg-[#EEEEF4] h-[calc(100vh-64px)]">
-          <div className="flex justify-center gap-6">
+          <div className="md:flex justify-center gap-6">
             <Intro />
             <Form />
           </div>
