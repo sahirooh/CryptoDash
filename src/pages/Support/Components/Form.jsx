@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="bg-white mt-6 font-medium h-[544px] rounded-lg flex flex-col gap-6 p-6">
+    <div className="bg-white mt-6 font-medium h-[500px] rounded-lg flex flex-col gap-4 p-6">
       <h1 className="font-medium">
         You will receive response within 24 hours of time of submit.
       </h1>
